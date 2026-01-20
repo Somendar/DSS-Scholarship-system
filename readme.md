@@ -16,31 +16,31 @@ A transparent, rule-based DSS for fair scholarship allocation that balances acad
 ```
 scholarship-dss/
 ├── data/
-│   └── StudentPerformance.csv      # Your input data
+│   └── StudentPerformance.csv     
 ├── src/
-│   ├── data_processor.py           # Data loading and enhancement
-│   ├── dss_engine.py               # Scoring and decision logic
-│   └── app.py                      # Streamlit application
-├── requirements.txt                # Python dependencies
-└── README.md                       # This file
+│   ├── data_processor.py           
+│   ├── dss_engine.py                
+│   └── app.py                       
+├── requirements.txt                
+└── README.md                       
 ```
 
 ##  Installation & Setup
 
 ### 1. Clone or Download
 
-```bash
-# Create project directory
+
+# project directory
 mkdir DSS-PROJECT
 cd DSS-PROJECT
 
-# Create subdirectories
+#  subdirectories
 mkdir data src
 ```
 
 ### 2. Install Dependencies
 
-```bash
+
 # Create virtual environment (recommended)
 python -m venv venv
 
@@ -56,7 +56,7 @@ pip install -r requirements.txt
 
 ### 3. Prepare Data
 
-Place your `StudentPerformance.csv` file in the `data/` folder.
+Place  `StudentPerformance.csv` file in the `data/` folder.
 
 ### 4. Run the Application
 
@@ -66,13 +66,13 @@ cd src
 streamlit run app.py
 ```
 
-The application will open in your default browser at `http://localhost:8501`
+The application will open in  default browser at `http://localhost:8501`
 
 ##  How It Works
 
 ### Data Enhancement
 
-The system automatically adds these fields to your dataset:
+The system automatically adds these fields to dataset:
 
 1. **family_income**: Annual income ($15K-$200K, log-normal distribution)
 2. **parent_education**: High School, Undergraduate, or Postgraduate
@@ -192,7 +192,7 @@ full_threshold = 85  # Raise bar for full scholarship
 partial_threshold = 65  # Raise bar for partial
 ```
 
-### Add New Data Fields
+###  New Data Fields
 
 In `data_processor.py`, add custom enhancements:
 
