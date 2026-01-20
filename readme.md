@@ -236,16 +236,3 @@ This DSS follows principles from:
 - Weighted Scoring Models
 - Transparent AI/Explainable AI (XAI)
 
-##  License
-
-This is an educational project. Adapt as needed for your institution's policies and legal requirements.
-
-##  Support
-
-For questions about the DSS methodology or implementation, refer to the "System Explanation" tab in the application or review the inline code comments.
-
----
-
-**Version**: 1.0  
-**Last Updated**: January 2026  
-**Status**: Production-Ready
