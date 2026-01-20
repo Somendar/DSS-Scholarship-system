@@ -2,7 +2,7 @@
 
 A transparent, rule-based DSS for fair scholarship allocation that balances academic merit, financial need, and student engagement.
 
-## 🎯 Features
+##  Features
 
 - **Transparent Scoring**: Every decision is fully explainable
 - **Configurable Weights**: Adjust priorities based on institutional needs
@@ -11,7 +11,7 @@ A transparent, rule-based DSS for fair scholarship allocation that balances acad
 - **Data Enhancement**: Automatically generates realistic additional fields
 - **Individual Analysis**: Detailed breakdown for each applicant
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 scholarship-dss/
@@ -25,14 +25,14 @@ scholarship-dss/
 └── README.md                       # This file
 ```
 
-## 🚀 Installation & Setup
+##  Installation & Setup
 
 ### 1. Clone or Download
 
 ```bash
 # Create project directory
-mkdir scholarship-dss
-cd scholarship-dss
+mkdir DSS-PROJECT
+cd DSS-PROJECT
 
 # Create subdirectories
 mkdir data src
@@ -68,7 +68,7 @@ streamlit run app.py
 
 The application will open in your default browser at `http://localhost:8501`
 
-## 📊 How It Works
+##  How It Works
 
 ### Data Enhancement
 
@@ -102,7 +102,7 @@ The system automatically adds these fields to your dataset:
 - **Score 60-79**: Partial Scholarship ($5,000)
 - **Score < 60**: Not Eligible ($0)
 
-## 🎛️ Using the Application
+## Application
 
 ### Upload Data
 1. Click "Browse files" in the sidebar
@@ -139,7 +139,7 @@ Modify score cutoffs for:
 
 **System Explanation Tab**: Complete documentation of how the DSS works
 
-## 🔍 Key Principles
+##  Key Principles
 
 ### Transparency
 Every calculation is visible and explainable. No black-box algorithms.
@@ -156,7 +156,7 @@ Weights can be adjusted to match institutional priorities and policies.
 ### Human-in-the-Loop
 The system **supports** human decision-makers, it doesn't replace them.
 
-## 📈 Sample Output
+##  Sample Output
 
 ```
 Rank #1
@@ -169,7 +169,7 @@ Breakdown:
 - Engagement: 96.0 (20% weight → 19.2 contribution)
 ```
 
-## 🛠️ Customization
+##  Customization
 
 ### Modify Scoring Weights
 
@@ -200,14 +200,14 @@ In `data_processor.py`, add custom enhancements:
 df['new_field'] = your_logic_here
 ```
 
-## 📝 Important Notes
+##  Important Notes
 
 1. **Simulated Data**: Added fields (income, education, etc.) are realistic simulations based on the original data
 2. **Not Deterministic**: Each run may generate slightly different simulated values (set random seed for reproducibility)
 3. **Decision Support**: This tool aids decision-making but should not be the sole factor
 4. **Context Matters**: Consider institutional policies, special circumstances, and qualitative factors
 
-## 🤝 Best Practices
+##  Best Practices
 
 1. **Review Top and Bottom**: Check both highly-scored and low-scored applicants
 2. **Test Different Weights**: See how priorities affect outcomes
@@ -215,7 +215,7 @@ df['new_field'] = your_logic_here
 4. **Human Review**: Final decisions should involve human judgment
 5. **Regular Updates**: Recalibrate thresholds based on outcomes
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 ### Issue: Weights don't sum to 100%
 **Solution**: Adjust sliders until the green checkmark appears
@@ -229,18 +229,18 @@ df['new_field'] = your_logic_here
 ### Issue: Streamlit won't start
 **Solution**: Check that you're in the `src/` directory and have activated virtual environment
 
-## 📚 References
+##  References
 
 This DSS follows principles from:
 - Multi-Criteria Decision Analysis (MCDA)
 - Weighted Scoring Models
 - Transparent AI/Explainable AI (XAI)
 
-## 📄 License
+##  License
 
 This is an educational project. Adapt as needed for your institution's policies and legal requirements.
 
-## 🙋 Support
+##  Support
 
 For questions about the DSS methodology or implementation, refer to the "System Explanation" tab in the application or review the inline code comments.
 
